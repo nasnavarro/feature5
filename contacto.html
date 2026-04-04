@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Contacto</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="./img/common/favicon.ico"
+    />
+    <link rel="stylesheet" href="./css/contacto.css">
+  </head>
+  <body>
+    <header>
+      <!-- Logo de la página con enlace a la home-->
+      <a href="index.html" title="Volver al inicio">
+        <img
+          src="./img/common/logo_valdecantos_235x50.png"
+          alt="Logo de la págia"
+        />
+      </a>
+
+      <!-- Menú Hamburguesa -->
+      <input type="checkbox" id="menu-toggle" class="menu-toggle">
+      <label for="menu-toggle" class="hamburger" aria-label="Abrir menú de navegación">
+        <span></span>
+      </label>
+
+      <!--Inicio del Menú de navegación superior-->
+      <nav>
+        <a href="./index.html">Inicio</a>
+        <a href="./sobre-mi.html">Sobre mí</a>
+        <a href="./index.html#skills">Skills</a>
+        <a href="./index.html#cheatsheets">Cheatsheets</a>
+        <a href="./index.html#recursos">Recursos</a>
+        <a href="./contacto.html">Contacto</a>
+      </nav>
+      <!--Fin del Menú de navegación superior-->
+    </header>
+
+    <main>
+      <section>
+        <h1>Contacta conmigo</h1>
+        <p>Rellena los siguientes datos y mándame tu consulta.</p>
+
+        <form>
+          <!-- Datos Personales -->
+          <fieldset>
+            <legend>Información Personal</legend>
+
+            <label for="nombre_completo" class="required">Nombre Completo:</label>
+            <input
+              type="text"
+              id="nombre_completo"
+              name="nombre_completo"
+              placeholder="Escribe tu nombre"
+              required
+            />
+
+            <label for="email" class="required">Email:</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="tunombre@correo.com"
+              required
+            />
+          </fieldset>
+
+          <!-- Consulta -->
+          <fieldset>
+            <legend>Realiza tu consulta</legend>
+
+            <label for="asunto" class="required">Asunto:</label>
+            <input
+              type="text"
+              id="asunto"
+              name="asunto"
+              placeholder="Asunto"
+              required
+            />
+
+            <label for="message" class="required">Mensaje:</label>
+            <textarea
+              id="message"
+              name="message"
+              rows="5"
+              cols="40"
+              placeholder="Escribe aquí..."
+              required
+            ></textarea>
+          </fieldset>
+
+          <!-- Botones -->
+          <p>
+            <button type="submit">Enviar</button>
+            <button type="reset">Borrar</button>
+          </p>
+        </form>
+      </section>
+    </main>
+
+    <footer
+      >Ignacio Navarro &copy;<script>document.write(new Date().getFullYear());</script>
+      · Realizado por <a href="https://www.websoluzion.com" target="_blank"
+        >WebSoluzion</a
+      >
+    </footer>
+  </body>
+</html>
