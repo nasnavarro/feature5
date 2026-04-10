@@ -1,11 +1,3 @@
-// Elementos comunes del <head>
-export const headCommonElements = `
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width" />
-  <meta name="author" content="Ignacio Navarro" />
-  <link rel="icon" type="image/x-icon" href="./img/common/favicon.ico"/>
-`;
-
 // Importamos los elementos del menú de navegación desde el módulo de datos
 import { menuItems } from '../data/menu.js';
 
