@@ -111,3 +111,22 @@ section{
   border-radius: 999px;
   padding: 0.2rem 0.65rem;
 }
+
+/* Dark mode - Tarjetas de skills */
+body.dark-mode .skill-card {
+  background-color: #1E1E1E;
+  border-color: #333;
+}
+
+body.dark-mode .skill-card h3 {
+  color: var(--color-secondary);
+}
+
+body.dark-mode .skill-card p {
+  color: var(--color-text-muted);
+}
+
+body.dark-mode .skill-card .tags .tag {
+  background-color: #2A2A2A;
+  color: var(--color-secondary-light);
+}

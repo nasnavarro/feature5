@@ -35,6 +35,15 @@ header {
   box-shadow: 0 2px 4px var(--color-shadow);
 }
 
+body.dark-mode h1,
+body.dark-mode p {
+  color: var(--color-text-inverse);
+}
+
+body.dark-mode h1 {
+  border-bottom-color: var(--color-secondary);
+}
+
 body.dark-mode header{
   background-color: #1E1E1E;
   border-bottom: 1px solid var(--color-border);
