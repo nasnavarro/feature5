@@ -68,6 +68,20 @@ article h2{
     }
 }
 
+/* Dark mode - Bloque About Me */
+body.dark-mode .about-me {
+  background-color: #1E1E1E;
+  border-color: #333;
+}
+
+body.dark-mode .about-me-text h2,
+body.dark-mode .experiencia h2,
+body.dark-mode .formacion h2,
+body.dark-mode .valores h2,
+body.dark-mode article h2 {
+  color: var(--color-text-inverse);
+}
+
 /* FIN DEL BLOQUE ABOUT ME DE LA SECCIÓN */
 
 
@@ -200,6 +214,32 @@ article h2{
         gap: 4px;
     }
 }
+/* Dark mode - Bloque Experiencia */
+body.dark-mode .timeline-content {
+  background-color: #1E1E1E;
+  border-color: #333;
+}
+
+body.dark-mode .timeline-content p,
+body.dark-mode .timeline-company {
+  color: var(--color-text-inverse);
+}
+
+body.dark-mode .timeline-tags li {
+  background-color: #2A2A2A;
+  color: var(--color-secondary-light);
+  border-color: var(--color-secondary-dark);
+}
+
+body.dark-mode .timeline-marker {
+  background-color: var(--color-secondary);
+  box-shadow: 0 0 0 2px var(--color-secondary);
+}
+
+body.dark-mode .timeline::before {
+  background: linear-gradient(to bottom, var(--color-secondary), #333);
+}
+
 /* FIN BLOQUE EXPERIENCIA DE LA SECCIÓN */
 
 
@@ -312,6 +352,41 @@ article h2{
         grid-template-columns: 1fr;
     }
 }
+/* Dark mode - Bloque Formación */
+body.dark-mode .formacion-card {
+  background-color: #1E1E1E;
+  border-color: #333;
+}
+
+body.dark-mode .formacion-card-body h3 {
+  color: var(--color-text-inverse);
+}
+
+body.dark-mode .formacion-period {
+  color: var(--color-tertiary);
+}
+
+body.dark-mode .formacion-badge {
+  background-color: color-mix(in srgb, var(--color-secondary) 15%, transparent);
+  color: var(--color-secondary);
+  border-color: var(--color-secondary-dark);
+}
+
+
+body.dark-mode .formacion-card--actual {
+  border-left-color: var(--color-tertiary);
+}
+
+body.dark-mode .formacion-card--actual::after {
+  border-color: transparent var(--color-tertiary) transparent transparent;
+}
+
+body.dark-mode .formacion-badge--actual {
+  background-color: color-mix(in srgb, var(--color-tertiary) 15%, transparent);
+  color: var(--color-tertiary);
+  border-color: var(--color-tertiary);
+}
+
 /* FIN BLOQUE EDUCACIÓN DE LA SECCIÓN */
 
 
@@ -408,4 +483,9 @@ article h2{
         padding: 1.5rem 0 1.5rem 1rem;
     }
 }
+/* Dark mode - Bloque Valores */
+body.dark-mode .valor-titulo {
+  color: var(--color-tertiary);
+}
+
 /* FIN BLOQUE VALORES DE LA SECCIÓN */
