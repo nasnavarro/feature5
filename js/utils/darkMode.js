@@ -8,8 +8,14 @@ const applyDarkMode = (isDark) => {
     }
 }
 
-// Inicialización: aplica la preferencia guardada. Debe llamarse desde main.js tras insertar el header
-export const initDarkMode = () => applyDarkMode(localStorage.getItem('darkMode') === 'true');
+// Inicialización: aplica preferencia guardada o, si no hay, la del sistema operativo
+export const initDarkMode = () => {
+    const saved = localStorage.getItem('darkMode');
+    const isDark = saved !== null
+        ? saved === 'true'
+        : window.matchMedia('(prefers-color-scheme: dark)').matches;
+    applyDarkMode(isDark);
+};
 
 // Funcionalidad del modo oscuro
 export const toggleDarkMode = () => {
