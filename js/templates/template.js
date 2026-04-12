@@ -48,7 +48,10 @@ const renderNavMenu = (pagecode, menuItems) => {
   nav.id = 'main-nav';
   nav.setAttribute('aria-label', 'Menú principal');
 
-  menuItems.forEach(item => {
+  //Mostramos sólo las opciones de menú que estén activas
+  const activeMenuItems = menuItems.filter(item => item.active === true);
+
+  activeMenuItems.forEach(item => {
     if (pagecode === item.pagecode) {
       const span = document.createElement('span');
       span.className = 'nav-active';
