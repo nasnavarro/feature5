@@ -35,10 +35,11 @@ menuToggle.addEventListener('change', () => {
   mainNav.setAttribute('aria-hidden', !menuToggle.checked);
 });
 
-// Submenú sticky
+
+// SUBMENU STICKY
 const submenu = document.querySelector('.submenu-sticky');
 
-// Si existe el submenú
+// Si existe el submenú, ya que hay páginas que no lo tendrán
 if(submenu){
   // Añadimos un eventListener del scroll
   addEventListener("scroll", () => {
