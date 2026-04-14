@@ -34,3 +34,23 @@ menuToggle.addEventListener('change', () => {
   hamburgerLabel.setAttribute('aria-expanded', menuToggle.checked);
   mainNav.setAttribute('aria-hidden', !menuToggle.checked);
 });
+
+// Submenú sticky
+const submenu = document.querySelector('.submenu-sticky');
+
+// Si existe el submenú
+if(submenu){
+  // Añadimos un eventListener del scroll
+  addEventListener("scroll", () => {
+
+    // Obtenermos la posición Y de la ventana que se ha salido de la ventana
+    const currentScroll = window.pageYOffset;
+
+    // Añadimos un estilo que añadirá una sombra al submenú.
+    if(currentScroll > 170){
+      submenu.classList.add("scrolled");
+    }else{
+      submenu.classList.remove("scrolled");
+    }
+  })
+}
