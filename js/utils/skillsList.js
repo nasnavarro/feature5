@@ -9,12 +9,13 @@ const renderSkill = (skill) => {
     const skillCard = document.createElement('div');
     skillCard.className = 'skill-card';
 
+    const { icon, name, description, tags } = skill; // Desestructuramos el objeto skill para obtener sus propiedades
     skillCard.innerHTML = `
-        <img src="${skill.icon}" alt="${skill.name} icon" class="skill-icon">
-        <h3>${skill.name}</h3>
-        <p>${skill.description}</p>
+        <img src="${icon}" alt="${name} icon" class="skill-icon">
+        <h3>${name}</h3>
+        <p>${description}</p>
         <div class="tags">
-        ${skill.tags.map(tag => `<span class="tag">${tag}</span>`).join('')}
+        ${tags.map(tag => `<span class="tag">${tag}</span>`).join('')}
         </div>
     `;
     return skillCard;
