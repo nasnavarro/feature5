@@ -5,6 +5,6 @@ export const menuItems = [
     { pagecode: 'cheatsheets', label: 'Cheatsheets',  href: 'index.html#cheatsheets' , active: true},
     { pagecode: 'viajes',   label: 'Viajes',    href: '#viajes' , active: false},
     { pagecode: 'escritos', label: 'Escritos',  href: '#escritos' , active: false},
-    { pagecode: 'recursos', label: 'Recursos',  href: '#recursos' , active: true},
+    { pagecode: 'recursos', label: 'Recursos',  href: 'recursos.html' , active: true},
     { pagecode: 'contacto', label: 'Contacto',  href: 'contacto.html' , active: true},
 ];
