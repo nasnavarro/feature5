@@ -2,8 +2,13 @@ export const resources = [
     {
         category: "Documentación Oficial",
         items: [
-            { title: "Titulo ejemplo Documentación Oficial", url: "http://url-ejemplo-documentacion-oficial.com", note: "Descripción de la documentación oficial" },
+            { title: "Titulo ejemplo Documentación Oficial", url: "index.html", note: "Descripción de la documentación oficial" },
             { title: "Titulo 2 ejemplo Documentación Oficial", url: "http://url-ejemplo2-documentacion-oficial.com", note: "Descripción 2 de la documentación oficial" },
+            { title: "MDN Web Docs", url: "https://developer.mozilla.org", note: "La referencia más completa de HTML, CSS y JavaScript mantenida por Mozilla." },
+            { title: "CSS-Tricks", url: "https://css-tricks.com", note: "Artículos, guías y snippets sobre CSS y frontend en general." },
+            { title: "Can I Use", url: "https://caniuse.com", note: "Compatibilidad de propiedades CSS y APIs web entre navegadores." },
+            { title: "W3C Specs", url: "https://www.w3.org/TR/", note: "Especificaciones oficiales de los estándares web del W3C." },
+            { title: "DevDocs", url: "https://devdocs.io", note: "Documentación de múltiples tecnologías unificada y con búsqueda rápida." },
         ]
     },
     {
